@@ -1,0 +1,7 @@
+#!/bin/bash
+# script allows to install and enable nginx + identify host by hostname
+sudo yum install nginx -y
+sudo sed -i -e "/\/h1/s/AMI\!/AMI $HOSTNAME/" /usr/share/nginx/html/index.html
+sudo chkconfig nginx on
+sudo service nginx start
+

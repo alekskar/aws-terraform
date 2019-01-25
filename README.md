@@ -1,4 +1,4 @@
-# aws-terraform
+# aws-terraform test
 ASG 3web + S3 + VPC
 
 1. Generate ssh key with name aws_key and place is into terraform directory:
